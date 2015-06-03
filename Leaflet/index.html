@@ -6,13 +6,26 @@
        <link rel="stylesheet" href='http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css' />
  
     <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
-    <style>
+   <!-- <style>
       html, body {height: 100%; width:100%; margin: 0; padding: 0;}
       .map-canvas {height: 100%; width:100%;}
-    </style>
+    </style> -->
+    <style>
+      .map {
+        height: 600px;
+        width: 100%;
+      }
+      </style>
   </head>
   <body>
-   <div class="map-canvas" id="map"></div>
+    <div id="links">
+    Maps
+    <ol name="Links">
+      <li><a href="../OpenLayers/index.html">OpenLayers</a></li>
+      <li><a href="../GoogleMaps/index.html">GoogleMaps</a></li>
+    <ol>  
+  </div>
+   <div class="map" id="map"></div>
    <script src="main.js"></script>
   </body>
 </html>

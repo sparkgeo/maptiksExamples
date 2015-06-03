@@ -26,14 +26,16 @@
         })
       }); */
 
-var source = new ol.source.Vector({
-        url: 'data/layers/7day-M2.5.json',
-        format: new ol.format.GeoJSON()
+      var source = new ol.source.Vector({
+        //url: 'data/layers/7day-M2.5.json',
+       // format: new ol.format.GeoJSON()
       });
+
       var draw = new ol.interaction.Draw({
         source: source,
         type: 'Point'
       });
+
       var map = new ol.Map({
         interactions: ol.interaction.defaults().extend([draw]),
         target: 'map',
