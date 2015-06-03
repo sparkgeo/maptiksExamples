@@ -18,14 +18,14 @@
 
 </html> 
 
--->
+
 <!doctype html>
 <html lang="en">
   <head>
     <link rel="stylesheet" href="http://openlayers.org/en/v3.5.0/css/ol.css" type="text/css">
     <style>
       .map {
-        height: 400px;
+        height: 600px;
         width: 100%;
       }
     </style>
@@ -37,4 +37,32 @@
     <div id="map" class="map"></div>
   <script src="main.js"></script>
   </body>
+</html>
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function show(shown, hidden) {
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hidden).style.display='none';
+  return false;
+}
+</script>
+</head>
+<body>
+ 
+  <div id="Page1">
+    Content of page 1
+    <a href="#" onclick="return show('Page2','Page1');">Show page 2</a>
+  </div>
+ 
+  <div id="Page2" style="display:none">
+    Content of page 2
+    <a href="#" onclick="return show('Page1','Page2');">Show page 1</a>
+  </div>
+ 
+</body>
 </html>

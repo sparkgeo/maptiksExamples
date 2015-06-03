@@ -1,15 +1,25 @@
-<head>
+<!DOCTYPE html>
+<html>
+  <head>
 
-    <link href="leaflet/leaflet.css" rel="stylesheet"></link>
-    <link href="style.css" rel="stylesheet"></link>
+    <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 
-</head>
-<body>
+    <style>
+      html, body {height: 100%; width:100%; margin: 0; padding: 0;}
+      .map-canvas {height: 100%; width:100%;}
+    </style>
 
-    <div id="mapLeafLet" class="leaflet-container leaflet-retina leaflet-fade-anim" style="position: relative;" tabindex="0"></div>
+  </head>
 
-        <script src="leaflet/leaflet.js"></script>
-        <script src="main.js"></script>
-    </body>
+
+  <body>
+
+    <div class="map-canvas" id="map-canvas"></div>
+
+    <script src="//cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+
 
 </html>
