@@ -9,7 +9,7 @@
 				zoom: 4,
 				mapTypeId: google.maps.MapTypeId.ROADMAP,
 
-				//Maptiks options
+				//Maptiks options - MAP ID
 				maptiks_id: 'GoogleMap Test',
 				mapTypeControlOptions:
 				{ 
@@ -29,7 +29,7 @@
 
 
 			// xyz layer (maptiks example code)
-    		var getXyzTileUrl = function (tile, zoom)
+    		/*var getXyzTileUrl = function (tile, zoom)
     		{
 	     		var sub = ['a.', 'b.', 'c.'];
 				var url = 'https://';
@@ -49,7 +49,7 @@
 			    }
 		    );
 
-    		gMap.overlayMapTypes.push(xyz);
+    		gMap.overlayMapTypes.push(xyz);*/
 
 			//General map customizing
 			gMap.set('styles', [
@@ -58,13 +58,13 @@
 			    elementType: 'geometry',
 			    stylers: [
 			      { color: '#000000' },
-			      { weight: 1.6 }
+			      { weight: 1.0 }
 			    ]
 			  }, {
 			    featureType: 'road',
 			    elementType: 'labels',
 			    stylers: [
-			      { saturation: -100 },
+			      { saturation: -10 },
 			      { invert_lightness: true }
 			    ]
 			  }, {
@@ -82,7 +82,7 @@
 			    stylers: [
 			      { hue: '#fff700' },
 			      { lightness: -15 },
-			      { saturation: 99 }
+			      { saturation: 50 }
 			    ]
 			  }
 			]);
@@ -94,6 +94,8 @@
 				{
 	  				position: new google.maps.LatLng(7.0002, -2.0032),
 	  				map: gMap,
+	  				//Maptiks marker ID
+	  				maptiks_id: 'School Marker',
 	  				icon: iconBase + 'schools_maps.png'
 				}
 			);
