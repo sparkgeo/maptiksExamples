@@ -57,8 +57,8 @@
 			    featureType: 'road',
 			    elementType: 'geometry',
 			    stylers: [
-			      { color: '#000000' },
-			      { weight: 1.6 }
+			      { color: '#FFFFFF' },
+			      { weight: 0.3 }
 			    ]
 			  }, {
 			    featureType: 'road',

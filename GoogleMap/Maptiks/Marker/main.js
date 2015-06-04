@@ -57,22 +57,22 @@
 			    featureType: 'road',
 			    elementType: 'geometry',
 			    stylers: [
-			      { color: '#000000' },
-			      { weight: 1.0 }
+			      { color: '#0A0700' },
+			      { weight: 0.3 }
 			    ]
 			  }, {
 			    featureType: 'road',
 			    elementType: 'labels',
 			    stylers: [
-			      { saturation: -10 },
-			      { invert_lightness: true }
+			      { saturation: 4 },
+			      { invert_lightness: false }
 			    ]
 			  }, {
 			    featureType: 'landscape',
 			    elementType: 'geometry',
 			    stylers: [
-			      { hue: '#ffff00' },
-			      { gamm: 1.4 },
+			      { hue: '#ffaa00' },
+			      { gamm: 1 },
 			      { saturation: 82 },
 			      { lightness: 0 }
 			    ]
