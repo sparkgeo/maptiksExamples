@@ -14,11 +14,11 @@ var OpenStreetMap_Mapnik = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x
                         						    }).addTo(map);
 
 //Extra tilelayer
-var testTileLayer = L.tileLayer('http://www.craiglarman.com/wiki/images/2/2e/Free-icon.png', {
+/*var testTileLayer = L.tileLayer('http://www.craiglarman.com/wiki/images/2/2e/Free-icon.png', {
                       					 maxZoom:19,
                       					 opacity: 0.4,
                                  maptiks_id: 'Extra Tile Layer'
-                      					 }).addTo(map);
+                      					 }).addTo(map);*/
 
 //Markers with maptiks identification
 var marker = L.marker([51.5, -0.09], {maptiks_id: 'Marker1'}).addTo(map);
