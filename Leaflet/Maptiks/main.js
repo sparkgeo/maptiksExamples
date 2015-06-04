@@ -31,7 +31,7 @@ var polygon = L.polygon([
     [51.509, -0.08],
     [55.503, -2.06],
     [53.51, -4.047],
-    [57, -7],
-    //Polygon with maptiks identification
-    {maptiks_id: 'Polygon1'}
+    [57, -7]
+    //Polygon with maptiks identification (doesn't work)
+    //{maptiks_id: 'Polygon1'}
 ]).addTo(map);
