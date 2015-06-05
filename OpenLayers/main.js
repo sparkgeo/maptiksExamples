@@ -42,10 +42,10 @@
         layers: [
           new ol.layer.Tile({
             title: "Global Imagery",
-            source: new ol.source.TileWMS({
-              url: 'http://maps.opengeo.org/geowebcache/service/wms',
-              params: {LAYERS: 'bluemarble', VERSION: '1.1.1'}
-            })
+            source: new ol.source.OSM() //new ol.source.TileWMS({
+            //   url: 'http://maps.opengeo.org/geowebcache/service/wms',
+            //   params: {LAYERS: 'bluemarble', VERSION: '1.1.1'}
+            // })
           }),
           new ol.layer.Vector({
             title: 'Earthquakes',
@@ -66,8 +66,10 @@
           })
         ],
         view: new ol.View({
-          projection: 'EPSG:4326',
-          center: [0, 0],
-          zoom: 3
+          //projection: 'EPSG:4326',
+          center: [0,0],
+          zoom: 2,
+          minZoom: 2,
+          maxZoom:20
         })
       });

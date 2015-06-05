@@ -6,13 +6,13 @@ var iconFeature = new ol.Feature({
 });
 
 var iconStyle = new ol.style.Style({
-    image: new ol.style.Icon( ({
+    image: new ol.style.Icon({
         anchor: [0.5, 46],
         anchorXUnits: 'fraction',
         anchorYUnits: 'pixels',
         //opacity: 0.75,
-        src: 'spkMarker.png'
-    }))
+        src: 'http://www.sparkgeo.com/static/img/spkMarker.png'
+    })
 });
 
 iconFeature.setStyle(iconStyle);
@@ -26,18 +26,16 @@ var markerLayer = new ol.layer.Vector({
   maptiks_id:'Sparkgeo Marker'
 });
 
-
 var map = new ol.Map({
-        target: 'map',
-        layers: [
-
-            markerLayer
-        ],
-        maptiks_id:'MAPA',
-        view: new ol.View({
-            center: [0,0],
-            zoom: 3
-        })
-      });
+    target: 'map',
+    layers: [
+        markerLayer
+    ],
+    maptiks_id:'MAPA',
+    view: new ol.View({
+        center: [0,0],
+        zoom: 3
+    })
+});
 
 

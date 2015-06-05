@@ -14,7 +14,7 @@ var iconStyle = new ol.style.Style({
         anchorXUnits: 'fraction',
         anchorYUnits: 'pixels',
         //opacity: 0.75,
-        src: 'spkMarker.png'
+        src: 'http://www.sparkgeo.com/static/img/spkMarker.png'
     }))
 });
 
