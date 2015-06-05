@@ -7,7 +7,8 @@ var map = new L.Map('mapLeafLet', {
  	   	});
 
 var OpenStreetMap_Mapnik = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                           		 					maxZoom: 19,
+                           		 					maxZoom: 17,
+                                        minZoom: 7,
                           		 					attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
                                         //maptiks identification
                                         maptiks_id: 'Tile Layer'
@@ -15,7 +16,8 @@ var OpenStreetMap_Mapnik = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x
 
 //Extra tilelayer
 var testTileLayer = L.tileLayer('http://www.craiglarman.com/wiki/images/2/2e/Free-icon.png', {
-                      					 maxZoom:19,
+                      					 maxZoom:13,
+                                 minZoom:6,
                       					 opacity: 0.4,
                                  maptiks_id: 'Extra Tile Layer' //ID for the extra layer
                       					 }).addTo(map);
