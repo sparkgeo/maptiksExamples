@@ -34,7 +34,7 @@ var map = new ol.Map({
     maptiks_id:'MAPA',
     view: new ol.View({
         center: [0,0],
-        zoom: 3
+        zoom: 2
     })
 });
 

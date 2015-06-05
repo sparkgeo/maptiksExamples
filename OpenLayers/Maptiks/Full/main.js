@@ -26,15 +26,21 @@ var map = new ol.Map({
   target: 'map',
   layers: [
       new ol.layer.Tile({
-          source: new ol.source.MapQuest({layer: 'osm'}),
-          maptiks_id:'LAYER'
+          source: new ol.source.OSM(),
+          maptiks_id:'LAYER1'
       }),
+      new ol.layer.Tile({
+            source: new ol.source.MapQuest({
+                layer: 'osm'
+            }),
+            maptiks_id:'LAYER2'
+        }),
       markerLayer
   ],
   maptiks_id:'MAPA',
   view: new ol.View({
       center: [0,0],
-      zoom: 3
+      zoom: 2
   })
 });
       
