@@ -8,17 +8,15 @@ var map = new L.Map('mapLeafLet', {
 
 var OpenStreetMap_Mapnik = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                            		 					maxZoom: 17,
-                                        minZoom: 7,
                           		 					attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
                                         //maptiks identification
                                         maptiks_id: 'Tile Layer'
                         						    }).addTo(map);
 
 //Extra tilelayer
-var testTileLayer = L.tileLayer('http://www.craiglarman.com/wiki/images/2/2e/Free-icon.png', {
+var testTileLayer = L.tileLayer('http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png', {
                       					 maxZoom:13,
-                                 minZoom:6,
-                      					 opacity: 0.4,
+                      					 opacity: 0.8,
                                  maptiks_id: 'Extra Tile Layer' //ID for the extra layer
                       					 }).addTo(map);
 
@@ -34,6 +32,4 @@ var polygon = L.polygon([
     [55.503, -2.06],
     [53.51, -4.047],
     [57, -7]
-    //Polygon with maptiks identification (doesn't work)
-    //{maptiks_id: 'Polygon1'}
 ]).addTo(map);
