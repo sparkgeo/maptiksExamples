@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Maptiks Examples by sparkgeo</title>
 
+    <script>
+      function show(shown,hidden1,hidden2) {
+        document.getElementById(shown).style.display='block';
+        document.getElementById(hidden1).style.display='none';
+        document.getElementById(hidden2).style.display='none';
+        return false;
+      }
+    </script>
+
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -26,47 +35,144 @@
           <li><a href="https://github.com/sparkgeo/maptiksExamples/tarball/master">Download <strong>TAR Ball</strong></a></li>
           <li><a href="https://github.com/sparkgeo/maptiksExamples">View On <strong>GitHub</strong></a></li>
         </ul>
+
       </header>
       <section>
 
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to Sparkgeo Examples page</h3>
+        <h2>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to Maptiks Examples page</h2>
 
 <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>Click the links below to show the examples for each API:</p>
+        <ul>  
+          <li><a href="#" onclick="return show('gm','lf','ol');">Google Maps</a></li>
+          <li><a href="#" onclick="return show('lf','gm','ol');">Leaflet</a></li>
+          <li><a href="#" onclick="return show('ol','lf','gm');">Open Layers v3</a></li>
+        </ul>
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Google Maps</h3>
 
-        <iframe src="http://bl.ocks.org/DannerTerra/raw/b158dfc8f75a5369fc2b/7595c8592c3b0e74c17e825d3afeb3ed148690d9/" marginwidth="0" marginheight="0" style="border: 1px solid #DEDEDE; width:100%; height:100%;" scrolling="no">
-        </iframe>
+
+
+<div id="gm" Style="display:none;">
+
+      <h2>
+           <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Google Maps
+      </h2>
+
+      <h4>
+           <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Layer
+      </h4>
+      <iframe class="frame" src="./GoogleMaps/Maptiks/Layer/" marginwidth="0" marginheight="0" scrolling="no">
+      </iframe>
+      <pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages</code>
+</pre>
+      <h4>
+           <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Marker
+      </h4>
+      <iframe class="frame" src="./GoogleMaps/Maptiks/Marker/" marginwidth="0" marginheight="0" scrolling="no">
+      </iframe>
+      <pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages</code>
+</pre>
+      <h4>
+           <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>All
+      </h4>
+      <iframe class="frame" src="./GoogleMaps/Maptiks/Full/" marginwidth="0" marginheight="0" scrolling="no">
+      </iframe>
+      <pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages</code>
+</pre>
+
+
+</div>
+
+
+<div id="lf" Style="display:none;">
+      <h2>
+        <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+        Leaflet
+      </h2>
+      <h4>
+        <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+        Layer
+      </h4>
+      <iframe class="frame" src="./Leaflet/Maptiks/Layer/" marginwidth="0" marginheight="0"  scrolling="no">
+      </iframe>
+      <pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages</code>
+</pre>
+      <h4>
+        <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+        Marker
+      </h4>
+      <iframe class="frame" src="./Leaflet/Maptiks/Marker/" marginwidth="0" marginheight="0"  scrolling="no">
+      </iframe>
+      <pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages</code>
+</pre>
+      <h4>
+        <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+        All
+      </h4>
+      <iframe class="frame" src="./Leaflet/Maptiks/Full/" marginwidth="0" marginheight="0"  scrolling="no">
+      </iframe>
+      <pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages</code>
+</pre>
+
+
+</div>
+
+
+<div id="ol" Style="display:none;"> 
+      <h2>
+        <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Open Layers 3</h2>
+      <h4>
+        <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+        Layer
+      </h4>
+      <iframe class="frame" src="./OpenLayers/Maptiks/Layer/" marginwidth="0" marginheight="0" scrolling="no">
+      </iframe>
         <pre><code>$ cd your_repo_root/repo_name
 $ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+$ git checkout gh-pages</code>
+</pre>
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Leaflet</h3>
-
-        <iframe src="http://bl.ocks.org/DannerTerra/raw/39c6d19b87a410369e49/00c45dc879987bf0d535435368f5feb7f1e311e6/" marginwidth="0" marginheight="0" style="border: 1px solid #DEDEDE; width:100%; height:100%;" scrolling="no">
-        </iframe>
+<h4>
+        <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+        Marker
+</h4>
+      <iframe class="frame" src="./OpenLayers/Maptiks/Marker/" marginwidth="0" marginheight="0" scrolling="no">
+      </iframe>
         <pre><code>$ cd your_repo_root/repo_name
 $ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+$ git checkout gh-pages</code>
+</pre>
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Open Layers 3</h3>
-
-        <iframe src="http://bl.ocks.org/DannerTerra/raw/5e636072781b3a41641f/c13d19e436a1bcb0ef8cf101df9b91b413eadb64/" marginwidth="0" marginheight="0" style="border: 1px solid #DEDEDE; width:100%; height:100%;" scrolling="no">
-        </iframe>
+<h4>
+        <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+        All
+</h4>
+      <iframe class="frame" src="./OpenLayers/Maptiks/Full/" marginwidth="0" marginheight="0" scrolling="no">
+      </iframe>
         <pre><code>$ cd your_repo_root/repo_name
 $ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-<br/>
-<br/>
+$ git checkout gh-pages</code>
+</pre>
+
+
+
+</div>
+
+s
 <br/>
 <p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
 
@@ -86,11 +192,17 @@ $ git checkout gh-pages
 <p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/sparkgeo">sparkgeo</a></p>
+        <p class="small-parag">This project is maintained by:</p>
+           <h1 id="title" class="sparkgeo">
+                <a href="http://www.sparkgeo.com/"><span class="greater-than">&gt;</span>spark<b>geo</b></a>
+            </h1>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
+             <!--<a href="https://github.com/sparkgeo" style="float:left;margin:-19px 10px 0 0"><img src="https://avatars1.githubusercontent.com/u/6663903?v=3&amp;s=60"></a><a href="https://github.com/sparkgeo">sparkgeo</a>
+       -->
     <script src="javascripts/scale.fix.js"></script>
     
   </body>
 </html>
+
