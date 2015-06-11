@@ -5,10 +5,10 @@ var map = new ol.Map({
             source: new ol.source.MapQuest({
                 layer: 'osm'
             }),
-            maptiks_id:'LAYER'
+            maptiks_id:'Layer 2'
         }),
     ],
-    maptiks_id:'MAPA',
+    maptiks_id:'OpenLayersTest',
     view: new ol.View({
         center: [0,0],
         zoom: 1

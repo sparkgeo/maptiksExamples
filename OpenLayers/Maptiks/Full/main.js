@@ -7,7 +7,7 @@ var iconFeature = new ol.Feature({
 
 var iconStyle = new ol.style.Style({
     image: new ol.style.Icon( {
-        src: 'http://www.sparkgeo.com/static/img/spkMarker.png'
+        src: './spkMarker.png'
     })
 });
 
@@ -27,17 +27,17 @@ var map = new ol.Map({
   layers: [
       new ol.layer.Tile({
           source: new ol.source.OSM(),
-          maptiks_id:'LAYER1' 
+          maptiks_id:'Layer 1' 
       }),
       new ol.layer.Tile({
             source: new ol.source.MapQuest({
                 layer: 'osm'
             }),
-            maptiks_id:'LAYER2'
+            maptiks_id:'Layer 2'
         }),
       markerLayer
   ],
-  maptiks_id:'MAPA',
+  maptiks_id:'OpenLayersTest',
   view: new ol.View({
       center: [0,0],
       zoom: 1
