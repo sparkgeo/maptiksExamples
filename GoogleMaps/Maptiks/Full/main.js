@@ -5,8 +5,8 @@
 
 			var mapOptions = 
 			{
-				center: new google.maps.LatLng(7.0002, -2.0032),
-				zoom: 4,
+				center: new google.maps.LatLng(59.0032,-120.0002),
+				zoom: 2,
 				mapTypeId: google.maps.MapTypeId.ROADMAP,
 
 				//Maptiks options

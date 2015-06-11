@@ -1,6 +1,6 @@
 var map = new L.Map('mapLeafLet', {
  	   	center: [51.5, -0.09],
-	   	zoom: 6,
+	   	zoom: 5,
  	   	// maptiks contents - MAP ID
  	   	maptiks_id: 'LeafletTEST',
       maptiks_debug: false

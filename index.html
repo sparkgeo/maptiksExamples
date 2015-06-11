@@ -5,21 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Maptiks Examples by sparkgeo</title>
 
-    <script>
-      function show(shown,hidden1,hidden2) {
-        document.getElementById(shown).style.display='block';
-        document.getElementById(hidden1).style.display='none';
-        document.getElementById(hidden2).style.display='none';
-        return false;
-      }
-    </script>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <script>
+      function show(shown,hidden1,hidden2) {
+        /*document.getElementById(shown).style.display='block';
+        document.getElementById(hidden1).style.display='none';
+        document.getElementById(hidden2).style.display='none';*/
+        $('#'+shown).toggle('slow');
+        $('#'+hidden1).slideUp();
+        $('#'+hidden2).slideUp();
+        return false;
+      }
+
+      function showCode(shown){
+        $(shown).next().toggle('slow');
+        return false;
+      }
+
+    
+    </script>   
   </head>
   <body>
     <div class="wrapper">
@@ -42,51 +54,86 @@
         <h2>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to Maptiks Examples page</h2>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis mollis est sit amet accumsan. Nam consectetur velit varius nunc venenatis, sed elementum neque dignissim. Proin risus ex, feugiat vitae dui sit amet, pharetra tristique nulla. Praesent eu velit pharetra, commodo risus ac, tincidunt mauris. 
+</p>
 
 <p>Click the links below to show the examples for each API:</p>
-        <ul>  
-          <li><a href="#" onclick="return show('gm','lf','ol');">Google Maps</a></li>
-          <li><a href="#" onclick="return show('lf','gm','ol');">Leaflet</a></li>
-          <li><a href="#" onclick="return show('ol','lf','gm');">Open Layers v3</a></li>
-        </ul>
-
+<p>
+<b><a href="#" onclick="return show('gm','lf','ol');"><b>Google Maps</b></a> | 
+         <a href="#" onclick="return show('lf','gm','ol');"><b>Leaflet</b></a> | 
+       <a href="#" onclick="return show('ol','lf','gm');"><b>Open Layers v3</b></a></b>
+</p>
 
 
 
 <div id="gm" Style="display:none;">
 
       <h2>
-           <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Google Maps
+           <a id="designer-templates" class="anchor" href="#google-maps" aria-hidden="true"><span class="octicon octicon-link"></span></a>Google Maps
       </h2>
 
       <h4>
-           <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Layer
-      </h4>
-      <iframe class="frame" src="./GoogleMaps/Maptiks/Layer/" marginwidth="0" marginheight="0" scrolling="no">
-      </iframe>
-      <pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages</code>
-</pre>
-      <h4>
-           <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Marker
+          <a id="designer-templates" class="anchor" href="#google-maps-marker" aria-hidden="true">
+            <span class="octicon octicon-link">
+           </span>
+          </a>Marker
       </h4>
       <iframe class="frame" src="./GoogleMaps/Maptiks/Marker/" marginwidth="0" marginheight="0" scrolling="no">
       </iframe>
-      <pre><code>$ cd your_repo_root/repo_name
+      <a href="#" onclick="return showCode(this);">Show / Hide Code</a>
+<div id="gm-marker" Style="display:none;">
+      html
+      <pre style="margin-bottom: 1px;"><code>$ cd your_repo_root/repo_name
 $ git fetch origin
 $ git checkout gh-pages</code>
 </pre>
+      main.js
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages</code>
+</pre>
+
+</div>
+
+<h4>
+           <a id="designer-templates" class="anchor" href="#google-maps-layer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Layer
+</h4>
+      <iframe class="frame" src="./GoogleMaps/Maptiks/Layer/" marginwidth="0" marginheight="0" scrolling="no">
+      </iframe>
+      <a href="#" onclick="return showCode(this);">Show / Hide Code</a>
+<div id="gm-layer" Style="display:none;">
+      html
+      <pre style="margin-bottom: 1px;"><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages</code>
+</pre>
+      main.js
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages</code>
+</pre>
+
+</div>
+
       <h4>
-           <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>All
+           <a id="designer-templates" class="anchor" href="#google-maps-all" aria-hidden="true"><span class="octicon octicon-link"></span></a>All
       </h4>
       <iframe class="frame" src="./GoogleMaps/Maptiks/Full/" marginwidth="0" marginheight="0" scrolling="no">
       </iframe>
-      <pre><code>$ cd your_repo_root/repo_name
+      <a href="#" onclick="return showCode(this);">Show / Hide Code</a>
+<div id="gm-all" Style="display:none;">
+      html
+      <pre style="margin-bottom: 1px;"><code>$ cd your_repo_root/repo_name
 $ git fetch origin
 $ git checkout gh-pages</code>
 </pre>
+      main.js
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages</code>
+</pre>
+
+</div>
 
 
 </div>
@@ -94,39 +141,73 @@ $ git checkout gh-pages</code>
 
 <div id="lf" Style="display:none;">
       <h2>
-        <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+        <a id="designer-templates" class="anchor" href="#leaflet" aria-hidden="true"><span class="octicon octicon-link"></span></a>
         Leaflet
       </h2>
-      <h4>
-        <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+      
+<h4>
+        <a id="designer-templates" class="anchor" href="#leaflet-marker" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+        Marker
+</h4>
+      <iframe class="frame" src="./Leaflet/Maptiks/Marker/" marginwidth="0" marginheight="0"  scrolling="no">
+      </iframe>
+      <a href="#" onclick="return showCode(this);">Show / Hide Code</a>
+<div id="lf-marker" Style="display:none;">
+      html
+      <pre style="margin-bottom: 1px;"><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages</code>
+</pre>
+      main.js
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages</code>
+</pre>
+
+</div>
+
+<h4>
+        <a id="designer-templates" class="anchor" href="#leaflet-layer" aria-hidden="true"><span class="octicon octicon-link"></span></a>
         Layer
       </h4>
       <iframe class="frame" src="./Leaflet/Maptiks/Layer/" marginwidth="0" marginheight="0"  scrolling="no">
       </iframe>
-      <pre><code>$ cd your_repo_root/repo_name
+      <a href="#" onclick="return showCode(this);">Show / Hide Code</a>
+<div id="lf-layer" Style="display:none;">
+      html
+      <pre style="margin-bottom: 1px;"><code>$ cd your_repo_root/repo_name
 $ git fetch origin
 $ git checkout gh-pages</code>
 </pre>
-      <h4>
-        <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>
-        Marker
-      </h4>
-      <iframe class="frame" src="./Leaflet/Maptiks/Marker/" marginwidth="0" marginheight="0"  scrolling="no">
-      </iframe>
-      <pre><code>$ cd your_repo_root/repo_name
+      main.js
+<pre><code>$ cd your_repo_root/repo_name
 $ git fetch origin
 $ git checkout gh-pages</code>
 </pre>
+
+</div>
+
+
       <h4>
-        <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+        <a id="designer-templates" class="anchor" href="#leaflet-all" aria-hidden="true"><span class="octicon octicon-link"></span></a>
         All
       </h4>
       <iframe class="frame" src="./Leaflet/Maptiks/Full/" marginwidth="0" marginheight="0"  scrolling="no">
       </iframe>
-      <pre><code>$ cd your_repo_root/repo_name
+      <a href="#" onclick="return showCode(this);">Show / Hide Code</a>
+<div id="lf-all" Style="display:none;">
+      html
+      <pre style="margin-bottom: 1px;"><code>$ cd your_repo_root/repo_name
 $ git fetch origin
 $ git checkout gh-pages</code>
 </pre>
+      main.js
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages</code>
+</pre>
+
+</div>
 
 
 </div>
@@ -134,52 +215,75 @@ $ git checkout gh-pages</code>
 
 <div id="ol" Style="display:none;"> 
       <h2>
-        <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Open Layers 3</h2>
-      <h4>
-        <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>
-        Layer
-      </h4>
-      <iframe class="frame" src="./OpenLayers/Maptiks/Layer/" marginwidth="0" marginheight="0" scrolling="no">
-      </iframe>
-        <pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages</code>
-</pre>
+        <a id="designer-templates" class="anchor" href="#open-layers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Open Layers v3</h2>
+      
 
 <h4>
-        <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+        <a id="designer-templates" class="anchor" href="#open-layers-marker" aria-hidden="true"><span class="octicon octicon-link"></span></a>
         Marker
 </h4>
       <iframe class="frame" src="./OpenLayers/Maptiks/Marker/" marginwidth="0" marginheight="0" scrolling="no">
       </iframe>
-        <pre><code>$ cd your_repo_root/repo_name
+        <a href="#" onclick="return showCode(this);">Show / Hide Code</a>
+<div id="ol-marker" Style="display:none;">
+      html
+      <pre style="margin-bottom: 1px;"><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages</code>
+</pre>
+      main.js
+<pre><code>$ cd your_repo_root/repo_name
 $ git fetch origin
 $ git checkout gh-pages</code>
 </pre>
 
+</div>
 <h4>
-        <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+        <a id="designer-templates" class="anchor" href="#open-layers-layer" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+        Layer
+</h4>
+      <iframe class="frame" src="./OpenLayers/Maptiks/Layer/" marginwidth="0" marginheight="0" scrolling="no">
+      </iframe>
+        <a href="#" onclick="return showCode(this);">Show / Hide Code</a>
+<div id="ol-layer" Style="display:none;">
+      html
+      <pre style="margin-bottom: 1px;"><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages</code>
+</pre>
+      main.js
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages</code>
+</pre>
+
+</div>
+<h4>
+        <a id="designer-templates" class="anchor" href="#open-layers-all" aria-hidden="true"><span class="octicon octicon-link"></span></a>
         All
 </h4>
       <iframe class="frame" src="./OpenLayers/Maptiks/Full/" marginwidth="0" marginheight="0" scrolling="no">
       </iframe>
-        <pre><code>$ cd your_repo_root/repo_name
+        <a href="#" onclick="return showCode(this);">Show / Hide Code</a>
+  <div id="ol-all" Style="display:none;">
+      html
+      <pre style="margin-bottom: 1px;"><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages</code>
+</pre>
+      main.js
+<pre><code>$ cd your_repo_root/repo_name
 $ git fetch origin
 $ git checkout gh-pages</code>
 </pre>
 
-
+  </div>
 
 </div>
 
-s
-<br/>
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis mollis est sit amet accumsan. Nam consectetur velit varius nunc venenatis, sed elementum neque dignissim. Proin risus ex, feugiat vitae dui sit amet, pharetra tristique nulla. Praesent eu velit pharetra, commodo risus ac, tincidunt mauris.
+</p>
 
-<h3>
-<a id="rather-drive-stick" class="anchor" href="#rather-drive-stick" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
 
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
