@@ -7,13 +7,32 @@ body {
   font-weight:300;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h5, h6 {
   color:#222;
   margin:0 0 20px;
 }
 
-p, ul, ol, table, pre, dl {
+/*.maptiks_logo{
+  background:url(../img/maptiks_logo.png) white no-repeat;
+  position: 
+}*/
+
+h4{
+  color:#222;
+  margin:5px 0 5px;
+}
+
+h3{
+  color:#222;
+  margin:20px 0 10px;
+}
+
+p, ul, ol, pre, dl {
   margin:0 0 20px;
+}
+
+table{
+  margin:0 0 0px;
 }
 
 .small-parag{
@@ -31,7 +50,6 @@ h1 {
  .sparkgeo a{
   font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
   color: black;
-  /*font-weight: 700; */
   font-weight: 500;
   text-decoration: none;
 }
@@ -66,7 +84,7 @@ a small {
 }
 
 .wrapper {
-  width:860px;
+  width:1024px;
   margin:0 auto;
 }
 
@@ -98,8 +116,7 @@ table {
 
 th, td {
   text-align:left;
-  padding:5px 10px;
-  border-bottom:1px solid #e5e5e5;
+  padding:1px 5px 3px 0px;
 }
 
 dt {
@@ -180,7 +197,7 @@ header ul a strong {
 }
 
 section {
-  width:500px;
+  width:664px;
   float:right;
   padding-bottom:50px;
 }
@@ -203,7 +220,7 @@ footer {
   bottom:50px;
 }
 
-@media print, screen and (max-width: 960px) {
+@media print, screen and (max-width: 1124px) {
 
   div.wrapper {
     width:auto;
@@ -281,5 +298,12 @@ footer {
   height:300px;
 }
 
+div#apis {
+  padding-bottom: 20px;
+}
 
-
+div#maptiksPage {
+  overflow:scroll; 
+  width:100%; 
+  height:400px;
+}
